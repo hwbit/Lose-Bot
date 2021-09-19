@@ -7,7 +7,8 @@ app = Flask('')
 def index():
   return "Bot is alive!"
 
-app.run(host='0.0.0.0', port=8080)
+def run():
+  app.run(host='0.0.0.0', port=8080)
 
 def keep_alive():
     server = Thread(target=run)
